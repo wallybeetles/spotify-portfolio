@@ -34,7 +34,7 @@ const Profile: NextPage = () => {
             concepts in front-end web development.
             <div className='mt-4'>
               Fast-forward to today, I have had the privilege of working as a
-              React developer for AXA Affin Malaysia, where I have been building
+              React developer for AXA Affin Malaysia where I have been building
               accessible, responsive websites and digital experiences.
             </div>
             <div className='mt-4'>

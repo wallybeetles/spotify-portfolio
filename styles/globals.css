@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -13,4 +17,38 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/* react-modal */
+
+.ReactModal__Overlay {
+  transition: all 200ms ease-in-out !important;
+  opacity: 0 !important;
+  transform: translateY(100vh) !important;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0 !important;
+  transform: translateY(100vh) !important;
+}
+
+/* react-toastify */
+:root {
+  --toastify-color-light: #2e77d0 !important;
+  --toastify-text-color-light: #ffff !important;
+}
+
+.Toastify__toast-container--bottom-center {
+  bottom: 7rem !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .Toastify__toast-container--bottom-center {
+    bottom: 6rem !important;
+  }
 }

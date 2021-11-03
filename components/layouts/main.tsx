@@ -14,7 +14,6 @@ const MainLayout = ({
   pageBackground,
   children,
 }: MainLayoutProps) => {
-  console.log('main');
   return (
     <div>
       <Head>

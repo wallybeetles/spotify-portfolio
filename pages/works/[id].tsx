@@ -55,6 +55,7 @@ const Work: NextPage<WorkProps> = ({ work }) => {
                   alt={`screenshot-${index + 1}`}
                   layout='fill'
                   objectFit='cover'
+                  objectPosition='top'
                   placeholder='blur'
                   blurDataURL={screenshot}
                 />

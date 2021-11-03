@@ -31,7 +31,7 @@ const Work: NextPage<WorkProps> = ({ work }) => {
           <div className='text-base'>{work.description}</div>
           <div className='mt-6 flex flex-wrap gap-2'>
             {work.technologies.map((tech: string, index: number) => (
-              <div key={index}>
+              <div key={index} className='mb-2'>
                 <Badge text={tech} />
               </div>
             ))}

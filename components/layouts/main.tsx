@@ -5,7 +5,7 @@ import Footer from '../footer';
 import Sidebar from '../sidebar';
 
 const backgrounds = {
-  purpleGradient: 'bg-gradient-to-b from-purple-dark via-gray-400 to-gray-500',
+  purpleGradient: 'bg-gradient-to-b from-purple-dark via-black to-gray-500',
   gray: 'bg-gray-500',
 };
 

@@ -41,7 +41,7 @@ const Navbar = ({ hideOnTop, isVisible, sendMailIcon, text }: NavbarProps) => {
       variants={variants}
       animate={controls}
       className={`${
-        hideOnTop ? 'opacity-0 bg-purple' : 'bg-transparent'
+        hideOnTop ? 'opacity-0 bg-purple' : 'bg-gray-500'
       } fixed top-0 z-50 w-full h-14 md:h-16 px-4 md:px-7 flex items-center`}
     >
       <motion.div
@@ -49,7 +49,7 @@ const Navbar = ({ hideOnTop, isVisible, sendMailIcon, text }: NavbarProps) => {
         className='flex justify-center md:justify-start w-full items-center relative'
       >
         {sendMailIcon && (
-          <div className='absolute md:static right-0 top-4 md:mr-4'>
+          <div className='absolute md:static right-0 top-3 md:mr-4'>
             <SendMail />
           </div>
         )}

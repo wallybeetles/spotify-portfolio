@@ -6,7 +6,7 @@ const SendMail = ({ size }: SendMailProps) => {
       <MailIcon
         className={`${
           size === 'large' ? 'md:w-16 md:h-16 md:p-5' : ''
-        } w-10 h-10 p-3 text-white bg-green-spotify rounded-full transform hover:scale-107 transition duration-200`}
+        } w-12 h-12 p-3 text-white bg-green-spotify rounded-full transform hover:scale-107 transition duration-200`}
       />
     </a>
   );

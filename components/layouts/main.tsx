@@ -27,6 +27,10 @@ const MainLayout = ({
         <meta property='og:type' content='website' />
         <meta property='og:image' content='/assets/hero.png' />
         <link rel='icon' href='/favicon.ico' />
+        <meta
+          name='google-site-verification'
+          content='mPXrxrXBeMDMAggEfyGlqJTEVtTa4zsXQYg-yDrcSi0'
+        />
       </Head>
       <Sidebar />
       <main

@@ -4,9 +4,9 @@ const works: IWork[] = [
     title: 'AXA eSkin Travel',
     technologies: ['Next.js', 'Redux', 'Redux Form', 'Bootstrap'],
     screenshots: [
-      '/assets/eskin-travel.png',
-      '/assets/eskin-mobile-1.jpg',
-      '/assets/eskin-mobile-2.jpg',
+      '/assets/screenshots/eskin-travel.png',
+      '/assets/screenshots/eskin-mobile-1.jpg',
+      '/assets/screenshots/eskin-mobile-2.jpg',
     ],
     place: 'AXA Affin Malaysia',
     url: 'https://digital.axa.com.my/travel-insurance-malaysia/',
@@ -15,12 +15,27 @@ const works: IWork[] = [
   },
   {
     id: 2,
+    title: 'Burberry Clone',
+    technologies: ['React', 'Framer Motion', 'TailwindCSS'],
+    screenshots: [
+      '/assets/screenshots/burberry.png',
+      '/assets/screenshots/burberry-mobile-1.jpg',
+      '/assets/screenshots/burberry-mobile-2.jpg',
+    ],
+    place: 'Personal Project',
+    url: 'https://burberry.netlify.app/',
+    githubUrl: 'https://github.com/sjkayle/burberry-clone',
+    description:
+      'This application is a simple static clone of the landing page of the Burberry Malaysia website. I started this project in order for me to learn how to implement Framer Motion, an animation library for React that I recently discovered, in my future projects. I tried to mimic the animations and gesture behaviour from the original page as closely as possible.',
+  },
+  {
+    id: 3,
     title: 'Spotify Portfolio',
     technologies: ['Next.js', 'TailwindCSS', 'Typescript'],
     screenshots: [
-      '/assets/portfolio.png',
-      '/assets/portfolio-mobile-1.jpg',
-      '/assets/portfolio-mobile-2.jpg',
+      '/assets/screenshots/portfolio.png',
+      '/assets/screenshots/portfolio-mobile-1.jpg',
+      '/assets/screenshots/portfolio-mobile-2.jpg',
     ],
     place: 'Personal Project',
     url: 'https://sjkayle.vercel.app/',
@@ -28,7 +43,7 @@ const works: IWork[] = [
     description: `First iteration of my personal website. I got the idea to create a website based on Spotify's App design when I read an article on Linkedin about a student who created a Spotify-themed resume. Being that Spotify is probably my most used application - and I am a huge fan of the app's aesthetics - I just went for it. This is my first attempt at using TailwindCSS and I had a lot of fun developing this portfolio.`,
   },
   {
-    id: 3,
+    id: 4,
     title: 'eStore: AXA Rewards',
     technologies: [
       'Webflow',
@@ -37,9 +52,9 @@ const works: IWork[] = [
       'Auth0',
     ],
     screenshots: [
-      '/assets/estore.png',
-      '/assets/estore-mobile-1.jpg',
-      '/assets/estore-mobile-2.jpg',
+      '/assets/screenshots/estore.png',
+      '/assets/screenshots/estore-mobile-1.jpg',
+      '/assets/screenshots/estore-mobile-2.jpg',
     ],
     place: 'AXA Affin Malaysia',
     url: 'https://www.axarewards.com.my/',

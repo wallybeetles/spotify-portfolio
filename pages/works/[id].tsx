@@ -1,5 +1,6 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import Image from 'next/image';
+import { AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 import useDisplayNavbar from '../../hooks/useDisplayNavbar';
@@ -20,7 +21,9 @@ const Work: NextPage<WorkProps> = ({ work }) => {
 
   return (
     <Main pageBackground='purpleGradient' pageTitle={work.title}>
-      <Navbar text={work.title} hideOnTop isVisible={isNavbarDisplayed} />
+      <AnimatePresence>
+        {isNavbarDisplayed && <Navbar text={work.title} />}
+      </AnimatePresence>
 
       <div ref={ref}>
         <WorkHero place={work.place} title={work.title} />

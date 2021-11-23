@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
+import { AnimatePresence } from 'framer-motion';
 import { ArrowRight } from 'react-feather';
 import { useInView } from 'react-intersection-observer';
 
@@ -22,12 +23,9 @@ const Home: NextPage = () => {
 
   return (
     <Main pageBackground='purpleGradient' pageTitle='Kayle San Juan'>
-      <Navbar
-        text='Kayle San Juan'
-        hideOnTop
-        sendMailIcon
-        isVisible={isNavbarDisplayed}
-      />
+      <AnimatePresence>
+        {isNavbarDisplayed && <Navbar text='Kayle San Juan' sendMailIcon />}
+      </AnimatePresence>
 
       <Hero />
 

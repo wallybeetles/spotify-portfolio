@@ -1,5 +1,4 @@
-import { forwardRef, useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 import SendMail from './icons/send-mail';
 
@@ -14,7 +13,7 @@ const variants = {
 
 const childrenVariants = {
   hidden: {
-    y: 20,
+    y: 10,
     opacity: 0,
   },
   visible: {
@@ -23,25 +22,15 @@ const childrenVariants = {
   },
 };
 
-const Navbar = ({ hideOnTop, isVisible, sendMailIcon, text }: NavbarProps) => {
-  const controls = useAnimation();
-
-  useEffect(() => {
-    if (hideOnTop) {
-      if (isVisible) {
-        controls.start('visible');
-      } else {
-        controls.start('hidden');
-      }
-    }
-  }, [hideOnTop, isVisible, controls]);
-
+const Navbar = ({ transparent, sendMailIcon, text }: NavbarProps) => {
   return (
     <motion.nav
       variants={variants}
-      animate={controls}
+      animate='visible'
+      initial='hidden'
+      exit='hidden'
       className={`${
-        hideOnTop ? 'opacity-0 bg-purple' : 'bg-gray-500'
+        transparent ? 'bg-gray-500' : 'bg-purple'
       } fixed top-0 z-50 w-full h-14 md:h-16 px-4 md:px-7 flex items-center`}
     >
       <motion.div
@@ -60,10 +49,9 @@ const Navbar = ({ hideOnTop, isVisible, sendMailIcon, text }: NavbarProps) => {
 };
 
 type NavbarProps = {
-  hideOnTop?: boolean;
-  isVisible?: boolean;
   sendMailIcon?: boolean;
   text: string;
+  transparent?: boolean;
 };
 
 export default Navbar;

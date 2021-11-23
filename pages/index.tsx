@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { ArrowRight } from 'react-feather';
 import { useInView } from 'react-intersection-observer';
 
+import useDisplayNavbar from '../hooks/useDisplayNavbar';
+
 import Button from '../components/button';
 import ControlPanel from '../components/control-panel';
 import ExperienceList from '../components/experience-list';
@@ -16,6 +18,7 @@ import Body from '../components/body';
 
 const Home: NextPage = () => {
   const { ref, inView } = useInView();
+  const isNavbarDisplayed = useDisplayNavbar(inView);
 
   return (
     <Main pageBackground='purpleGradient' pageTitle='Kayle San Juan'>
@@ -23,7 +26,7 @@ const Home: NextPage = () => {
         text='Kayle San Juan'
         hideOnTop
         sendMailIcon
-        isVisible={!inView}
+        isVisible={isNavbarDisplayed}
       />
 
       <Hero />

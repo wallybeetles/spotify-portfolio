@@ -1,30 +1,30 @@
-import { useEffect } from 'react';
+import { forwardRef, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 
 import SendMail from './icons/send-mail';
 
+const variants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+  },
+};
+
+const childrenVariants = {
+  hidden: {
+    y: 20,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
+
 const Navbar = ({ hideOnTop, isVisible, sendMailIcon, text }: NavbarProps) => {
   const controls = useAnimation();
-
-  const variants = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-    },
-  };
-
-  const childrenVariants = {
-    hidden: {
-      y: 20,
-      opacity: 0,
-    },
-    visible: {
-      y: 0,
-      opacity: 1,
-    },
-  };
 
   useEffect(() => {
     if (hideOnTop) {

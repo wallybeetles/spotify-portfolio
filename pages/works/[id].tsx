@@ -2,6 +2,8 @@ import type { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import Image from 'next/image';
 import { useInView } from 'react-intersection-observer';
 
+import useDisplayNavbar from '../../hooks/useDisplayNavbar';
+
 import Badge from '../../components/badge';
 import Body from '../../components/body';
 import Navbar from '../../components/navbar';
@@ -14,10 +16,11 @@ import works from '../../data/works';
 
 const Work: NextPage<WorkProps> = ({ work }) => {
   const { ref, inView } = useInView();
+  const isNavbarDisplayed = useDisplayNavbar(inView);
 
   return (
     <Main pageBackground='purpleGradient' pageTitle={work.title}>
-      <Navbar text={work.title} hideOnTop isVisible={!inView} />
+      <Navbar text={work.title} hideOnTop isVisible={isNavbarDisplayed} />
 
       <div ref={ref}>
         <WorkHero place={work.place} title={work.title} />

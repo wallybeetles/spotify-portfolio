@@ -4,7 +4,7 @@ const works: IWork[] = [
     title: 'Angular Components',
     technologies: ['Angular', 'Bootstrap'],
     screenshots: ['/assets/screenshots/ng-components.png'],
-    place: 'Skandinaviska Enskilda Banken AB',
+    place: 'Skandinaviska Enskilda Banken ab',
     url: 'https://sebgroup.github.io/ng-components/',
     githubUrl: 'https://github.com/sebgroup/ng-components/',
     description:
@@ -37,7 +37,8 @@ const works: IWork[] = [
     place: 'Personal Project',
     url: 'https://sjkayle.vercel.app/',
     githubUrl: 'https://github.com/sjkayle/portfolio-v1',
-    description: `First iteration of my personal website. I got the idea to create a website based on the Spotify's app design when I read an article on Linkedin about a student who created a Spotify-themed resume. Being that Spotify is probably my most used application - and I am a huge fan of the app's aesthetics - I just went for it. This is my first attempt at using TailwindCSS and I had a lot of fun developing this portfolio.`,
+    description:
+      "First iteration of my personal website. I got the idea to create a website based on the Spotify's app design when I read an article on Linkedin about a student who created a Spotify-themed resume. Being that Spotify is probably my most used application - and I am a huge fan of the app's aesthetics - I just went for it. This is my first attempt at using TailwindCSS and I had a lot of fun developing this portfolio.",
   },
   {
     id: 'eskin-travel',
@@ -58,7 +59,7 @@ const works: IWork[] = [
     title: 'React Components',
     technologies: ['Gatsby.js', 'React', 'Bootstrap', 'Typescript'],
     screenshots: ['/assets/screenshots/react-components.png'],
-    place: 'Skandinaviska Enskilda Banken AB',
+    place: 'Skandinaviska Enskilda Banken ab',
     url: 'https://sebgroup.github.io/react-components/',
     githubUrl: 'https://github.com/sebgroup/react-components/',
     description:
@@ -69,7 +70,7 @@ const works: IWork[] = [
     title: 'Green Design',
     technologies: ['Sass', 'Angular', 'React', 'Storybook'],
     screenshots: ['/assets/screenshots/green.png'],
-    place: 'Skandinaviska Enskilda Banken AB',
+    place: 'Skandinaviska Enskilda Banken ab',
     url: 'https://sebgroup.github.io/green/latest/chlorophyll/',
     githubUrl: 'https://github.com/sebgroup/green',
     description:
@@ -80,7 +81,7 @@ const works: IWork[] = [
     title: 'Pension Calculator',
     technologies: ['Angular', 'SEB ng-components'],
     screenshots: ['/assets/screenshots/pension-calculator.png'],
-    place: 'Skandinaviska Enskilda Banken AB',
+    place: 'Skandinaviska Enskilda Banken ab',
     url: 'https://seb.se/privat/pension-och-forsakring/pensionsspara/privat-pensionssparande',
     description:
       "A microfrontend application onboarded onto SEB's website. This pension calculator application serves as a playground for SEB's customers, where they can see their expected pension payouts based on their age, salary, savings, etc.",

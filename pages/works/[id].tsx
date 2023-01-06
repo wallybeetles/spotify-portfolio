@@ -15,6 +15,9 @@ import { WorkHero } from '../../components/hero';
 
 import works from '../../data/works';
 
+const screenshotClasses =
+  'relative rounded-lg overflow-hidden transform hover:scale-101 focus:scale-101 transition duration-200';
+
 const Work: NextPage<WorkProps> = ({ work }) => {
   const { ref, inView } = useInView();
   const isNavbarDisplayed = useDisplayNavbar(inView);
@@ -34,8 +37,8 @@ const Work: NextPage<WorkProps> = ({ work }) => {
           <SectionTitle title="About" />
           <div className="text-base">{work.description}</div>
           <div className="mt-6 flex flex-wrap gap-2">
-            {work.technologies.map((tech: string, index: number) => (
-              <div key={index} className="mb-2">
+            {work.technologies.map((tech: string, i: number) => (
+              <div key={i} className="mb-2">
                 <Badge text={tech} />
               </div>
             ))}
@@ -50,7 +53,7 @@ const Work: NextPage<WorkProps> = ({ work }) => {
             } gap-4 md:gap-6 xl:w-3/4`}
           >
             {work.screenshots.length === 1 && (
-              <div className="h-96 col-span-2 relative rounded-lg overflow-hidden transform hover:scale-101 focus:scale-101 transition duration-200">
+              <div className={`h-96 col-span-2 ${screenshotClasses}`}>
                 <Image
                   src={work.screenshots[0]}
                   alt="screenshot-1"
@@ -64,16 +67,16 @@ const Work: NextPage<WorkProps> = ({ work }) => {
               </div>
             )}
             {work.screenshots.length > 1 &&
-              work.screenshots.map((screenshot: string, index: number) => (
+              work.screenshots.map((screenshot: string, i: number) => (
                 <div
-                  key={index}
+                  key={i}
                   className={`${
-                    index === 0 ? 'h-96 col-span-2' : 'col-span-2 md:col-span-1 md:row-span-2'
-                  } relative rounded-lg overflow-hidden transform hover:scale-101 focus:scale-101 transition duration-200`}
+                    !i ? 'h-96 col-span-2' : 'col-span-2 md:col-span-1 md:row-span-2'
+                  } ${screenshotClasses}`}
                 >
                   <Image
                     src={screenshot}
-                    alt={`screenshot-${index + 1}`}
+                    alt={`screenshot-${i + 1}`}
                     layout="fill"
                     objectFit="cover"
                     objectPosition="top"

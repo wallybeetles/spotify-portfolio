@@ -6,12 +6,12 @@ const WorksGrid = ({ isOneRow }: WorksGridProps) => {
   const featuredWork = isOneRow ? [...works.slice(0, 5)] : [...works];
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
-      {featuredWork.map(({ id, screenshots, title, technologies }, index) => {
+      {featuredWork.map(({ id, screenshots, title, technologies }: IWork, i: number) => {
         let classname = '';
         if (isOneRow) {
-          if (index === 3) {
+          if (i === 3) {
             classname = 'hidden lg:block';
-          } else if (index === 4) {
+          } else if (i === 4) {
             classname = 'hidden xl:block';
           }
         }

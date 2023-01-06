@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 const Button = (props: ButtonProps) => {
   const round = props.round ? 'rounded-full' : 'rounded-md';
 
@@ -11,7 +13,7 @@ const Button = (props: ButtonProps) => {
 };
 
 type ButtonProps = {
-  children: string;
+  children: ReactNode;
   round?: boolean;
 };
 

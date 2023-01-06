@@ -30,8 +30,8 @@ module.exports = {
         spotify: '#1db954',
       },
       purple: {
-        light: '#B497AF',
-        DEFAULT: '#664C61',
+        light: '#b497af',
+        DEFAULT: '#664c61',
         dark: '#210a1e',
       },
     },

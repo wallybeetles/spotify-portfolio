@@ -45,12 +45,7 @@ const works: IWork[] = [
   {
     id: 4,
     title: 'eStore: AXA Rewards',
-    technologies: [
-      'Webflow',
-      'Typescript',
-      'Stimulus.js (DOM manipulation)',
-      'Auth0',
-    ],
+    technologies: ['Webflow', 'Typescript', 'Stimulus.js (DOM manipulation)', 'Auth0'],
     screenshots: [
       '/assets/screenshots/estore.png',
       '/assets/screenshots/estore-mobile-1.jpg',

@@ -14,23 +14,18 @@ const customStyles = {
   overlay: { zIndex: 100 },
 };
 
-const ExperienceModalItem = ({
-  icon: Icon,
-  text,
-}: ExperienceModalItemProps) => {
+const ExperienceModalItem = ({ icon: Icon, text }: ExperienceModalItemProps) => {
   return (
-    <div className='group p-8 h-10 flex items-center hover:bg-gray-400 hover:bg-opacity-50 hover:text-gray-100 text-sm'>
-      <div className='text-gray-100 group-hover:text-green-spotify'>
+    <div className="group p-8 h-10 flex items-center hover:bg-gray-400 hover:bg-opacity-50 hover:text-gray-100 text-sm">
+      <div className="text-gray-100 group-hover:text-green-spotify">
         <Icon size={18} strokeWidth={1} />
       </div>
-      <span className='ml-4 flex items-center'>{text}</span>
+      <span className="ml-4 flex items-center">{text}</span>
     </div>
   );
 };
 
-const ExperienceModal = memo(function ExperienceModal({
-  experience,
-}: ExperienceModalProps) {
+const ExperienceModal = memo(function ExperienceModal({ experience }: ExperienceModalProps) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   useEffect(() => {
@@ -57,35 +52,30 @@ const ExperienceModal = memo(function ExperienceModal({
       <Modal
         closeTimeoutMS={200}
         isOpen={isOpen}
-        bodyOpenClassName='overflow-hidden'
+        bodyOpenClassName="overflow-hidden"
         style={customStyles}
         shouldCloseOnEsc
         shouldCloseOnOverlayClick={false}
         onRequestClose={() => {
           setIsOpen(false);
         }}
-        overlayClassName='fixed inset-0 backdrop-filter backdrop-blur bg-gray-300 bg-opacity-95'
+        overlayClassName="fixed inset-0 backdrop-filter backdrop-blur bg-gray-300 bg-opacity-95"
         ariaHideApp={false}
       >
-        <div className='text-white flex flex-col h-full'>
-          <div className='flex flex-col items-center'>
-            <div className='bg-white w-36 h-36 relative'>
-              <Image
-                src={experience?.imgSrc}
-                alt='company'
-                layout='fill'
-                objectFit='contain'
-              />
+        <div className="text-white flex flex-col h-full">
+          <div className="flex flex-col items-center">
+            <div className="bg-white w-36 h-36 relative">
+              <Image src={experience?.imgSrc} alt="company" layout="fill" objectFit="contain" />
             </div>
-            <div className='font-semibold mt-5'>{experience?.company}</div>
+            <div className="font-semibold mt-5">{experience?.company}</div>
           </div>
-          <div className='mt-5'>
+          <div className="mt-5">
             <ExperienceModalItem text={experience?.position} icon={Users} />
             <ExperienceModalItem text={experience?.location} icon={MapPin} />
             <ExperienceModalItem text={experience?.duration} icon={Clock} />
           </div>
           <div
-            className='mt-auto font-semibold flex justify-center cursor-pointer hover:text-gray-100'
+            className="mt-auto font-semibold flex justify-center cursor-pointer hover:text-gray-100"
             onClick={() => {
               setIsOpen(false);
             }}

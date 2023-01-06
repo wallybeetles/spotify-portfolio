@@ -12,23 +12,15 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
       <ToastContainer
         autoClose={3000}
-        bodyClassName='text-center font-semibold'
+        bodyClassName="text-center font-semibold"
         closeButton={false}
         draggable={false}
         hideProgressBar
         limit={1}
-        position='bottom-center'
+        position="bottom-center"
       />
     </>
   );
 }
-
-/**
- * TODO
- * proper typing: use Pick(?)
- * container width (for bigger screens)
- * content
- *
- */
 
 export default MyApp;

@@ -4,21 +4,10 @@ import SendMail from '../icons/send-mail';
 
 const variants = {
   hidden: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-  },
-};
-
-const childrenVariants = {
-  hidden: {
-    y: 10,
-    opacity: 0,
+    y: -64,
   },
   visible: {
     y: 0,
-    opacity: 1,
   },
 };
 
@@ -26,17 +15,15 @@ const Navbar = ({ transparent, sendMailIcon, text }: NavbarProps) => {
   return (
     <motion.nav
       variants={variants}
+      transition={{ type: 'tween' }}
       animate="visible"
       initial="hidden"
       exit="hidden"
       className={`${
         transparent ? 'bg-gray-500' : 'bg-purple'
-      } fixed top-0 z-50 w-full h-14 md:h-16 px-4 md:px-7 flex items-center`}
+      } fixed top-0 z-50 w-full h-16 px-4 md:px-7 flex items-center`}
     >
-      <motion.div
-        variants={childrenVariants}
-        className="flex justify-center md:justify-start w-full items-center relative"
-      >
+      <motion.div className="flex justify-center md:justify-start w-full items-center relative">
         {sendMailIcon && (
           <div className="absolute md:static right-0 top-3 md:mr-4">
             <SendMail />

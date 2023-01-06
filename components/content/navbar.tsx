@@ -1,8 +1,8 @@
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
 import SendMail from '../icons/send-mail';
 
-const variants = {
+const variants: Variants = {
   hidden: {
     y: -64,
   },

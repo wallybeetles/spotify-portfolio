@@ -32,7 +32,7 @@ const WorkCard = (props: WorkCardProps) => {
 };
 
 type WorkCardProps = {
-  id: number;
+  id: string;
   thumbnail: string;
   title: string;
   technologies: string[];

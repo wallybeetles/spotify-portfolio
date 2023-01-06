@@ -71,7 +71,7 @@ const Home: NextPage = () => {
                 </div>
 
                 <div className="mt-5 mb-8 text-base md:text-lg">
-                  I am a software engineer specializing in building web applications using React and Angular 2+. Currently, I am
+                  I am a software engineer specializing in building web applications using React and Angular. Currently, I am
                   working for <span className="font-extrabold">SEB</span> under INSCALE Sdn. Bhd. in
                   Kuala Lumpur.
                 </div>

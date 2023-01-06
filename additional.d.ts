@@ -8,7 +8,7 @@ interface IExperience {
 }
 
 interface IWork {
-  id: number;
+  id: string;
   title: string;
   technologies: string[];
   screenshots: string[];

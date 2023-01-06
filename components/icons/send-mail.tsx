@@ -2,7 +2,7 @@ import { MailIcon } from '@heroicons/react/solid';
 
 const SendMail = ({ size }: SendMailProps) => {
   return (
-    <a href='mailto:kayle.sanjuan@gmail.com' aria-label='Send mail'>
+    <a href="mailto:kayle.sanjuan@gmail.com" aria-label="Send mail">
       <MailIcon
         className={`${
           size === 'large' ? 'md:w-16 md:h-16 md:p-5' : ''

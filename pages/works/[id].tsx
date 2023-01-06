@@ -5,13 +5,13 @@ import { useInView } from 'react-intersection-observer';
 
 import useDisplayNavbar from '../../hooks/useDisplayNavbar';
 
+import Body from '../../components/content/body';
+import Navbar from '../../components/content/navbar';
+import Section, { SectionTitle } from '../../components/content/section';
+import Main from '../../components/layouts/main';
 import Badge from '../../components/badge';
-import Body from '../../components/body';
-import Navbar from '../../components/navbar';
 import { WorkControlPanel } from '../../components/control-panel';
 import { WorkHero } from '../../components/hero';
-import Section, { SectionTitle } from '../../components/section';
-import Main from '../../components/layouts/main';
 
 import works from '../../data/works';
 
@@ -20,10 +20,8 @@ const Work: NextPage<WorkProps> = ({ work }) => {
   const isNavbarDisplayed = useDisplayNavbar(inView);
 
   return (
-    <Main pageBackground='purpleGradient' pageTitle={work.title}>
-      <AnimatePresence>
-        {isNavbarDisplayed && <Navbar text={work.title} />}
-      </AnimatePresence>
+    <Main pageBackground="purpleGradient" pageTitle={work.title}>
+      <AnimatePresence>{isNavbarDisplayed && <Navbar text={work.title} />}</AnimatePresence>
 
       <div ref={ref}>
         <WorkHero place={work.place} title={work.title} />
@@ -33,11 +31,11 @@ const Work: NextPage<WorkProps> = ({ work }) => {
         <WorkControlPanel url={work.url} githubUrl={work.githubUrl || ''} />
 
         <Section>
-          <SectionTitle title='About' />
-          <div className='text-base'>{work.description}</div>
-          <div className='mt-6 flex flex-wrap gap-2'>
+          <SectionTitle title="About" />
+          <div className="text-base">{work.description}</div>
+          <div className="mt-6 flex flex-wrap gap-2">
             {work.technologies.map((tech: string, index: number) => (
-              <div key={index} className='mb-2'>
+              <div key={index} className="mb-2">
                 <Badge text={tech} />
               </div>
             ))}
@@ -45,27 +43,25 @@ const Work: NextPage<WorkProps> = ({ work }) => {
         </Section>
 
         <Section>
-          <SectionTitle title='Some screenshots' />
-          <div className='grid grid-cols-2 grid-rows-3 gap-4 md:gap-6 xl:w-3/4'>
+          <SectionTitle title="Some screenshots" />
+          <div className="grid grid-cols-2 grid-rows-3 gap-4 md:gap-6 xl:w-3/4">
             {work.screenshots.map((screenshot: string, index: number) => (
               <div
                 key={index}
                 className={`${
-                  index === 0
-                    ? 'h-96 col-span-2'
-                    : 'col-span-2 md:col-span-1 md:row-span-2'
+                  index === 0 ? 'h-96 col-span-2' : 'col-span-2 md:col-span-1 md:row-span-2'
                 } relative rounded-lg overflow-hidden transform hover:scale-101 focus:scale-101 transition duration-200`}
               >
                 <Image
                   src={screenshot}
                   alt={`screenshot-${index + 1}`}
-                  layout='fill'
-                  objectFit='cover'
-                  objectPosition='top'
-                  placeholder='blur'
+                  layout="fill"
+                  objectFit="cover"
+                  objectPosition="top"
+                  placeholder="blur"
                   blurDataURL={screenshot}
                 />
-                <div className='hidden md:block bg-purple transition duration-500 absolute inset-0 bg-opacity-50 backdrop-filter backdrop-grayscale hover:backdrop-grayscale-0 hover:bg-opacity-0 focus:backdrop-grayscale-0 focus:bg-opacity-0'></div>
+                <div className="hidden md:block bg-purple transition duration-500 absolute inset-0 bg-opacity-50 backdrop-filter backdrop-grayscale hover:backdrop-grayscale-0 hover:bg-opacity-0 focus:backdrop-grayscale-0 focus:bg-opacity-0"></div>
               </div>
             ))}
           </div>

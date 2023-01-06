@@ -13,7 +13,7 @@ function CopyToClipboard({ tooltipContent }: CopyToClipboardProps) {
 
   return (
     <Tooltip content={tooltipContent}>
-      <div className='cursor-pointer hover:text-white' onClick={handleClick}>
+      <div className="cursor-pointer hover:text-white" onClick={handleClick}>
         <Link size={18} strokeWidth={2} />
       </div>
     </Tooltip>

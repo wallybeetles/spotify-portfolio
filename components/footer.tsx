@@ -22,7 +22,7 @@ const Footer = memo(function Footer() {
       </div>
       <div className='text-xs text-right flex-1'>
         <div>Developed by sjkayle</div>
-        <div className='truncate'>Design inspried by Spotify App</div>
+        <div className='truncate'>Design inspired by Spotify App</div>
       </div>
     </footer>
   );

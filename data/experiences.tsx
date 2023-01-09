@@ -1,7 +1,7 @@
 const experiences: IExperience[] = [
   {
     id: 1,
-    position: 'Software Engineer',
+    position: 'Software Developer',
     company: 'INSCALE Sdn. Bhd.',
     imgSrc: '/assets/logos/inscale.svg',
     location: 'Kuala Lumpur, Malaysia',

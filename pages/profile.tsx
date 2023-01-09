@@ -18,10 +18,10 @@ const Profile: NextPage = () => {
         <Section>
           <SectionTitle title="About me" />
           <p className="text-base">
-            Hello! I&apos;m Kayle and I am a self-taught front-end developer. My interest in UI development started back
-            in 2019 during my first job. I was given a task to create a simple static page with HTML &amp; CSS. Turns
-            out, I am a person who enjoys writing code to create aesthetically pleasing user interfaces. From there, I
-            found myself learning about different concepts in front-end development.
+            Hello! My name is Kayle and I am a self-taught front-end developer. My interest in UI development started
+            back in 2019 at my first job. I was given a task to create a simple static page using only HTML &amp; CSS.
+            Turns out, I am a person who enjoys writing code to create aesthetically pleasing user interfaces. From
+            there, I found myself learning about different concepts in front-end development.
             <div className="mt-4">
               Fast-forward to today, I have the privilege of working as a front-end developer for SEB where I have been
               building accessible, responsive websites and digital experiences.

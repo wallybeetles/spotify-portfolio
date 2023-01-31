@@ -21,7 +21,7 @@ const experiences: IExperience[] = [
     company: 'Amdocs Philippines Inc.',
     imgSrc: '/assets/logos/amdocs.png',
     location: 'Manila, Philippines',
-    duration: 'Jan 2018 - Mar 2020',
+    duration: 'Jan 2019 - Mar 2020',
   },
   {
     id: 4,

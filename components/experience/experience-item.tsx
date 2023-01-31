@@ -27,8 +27,8 @@ const ExperienceItem = ({ experience }: ExperienceItemProps) => {
           </div>
         </div>
         <div className="ml-2 md:ml-4">
-          <span className="text-white font-semibold truncate">{experience.position}</span>
-          <div className="truncate">{experience.company}</div>
+          <span className="text-white font-semibold truncate">{experience.company}</span>
+          <div className="truncate">{experience.position}</div>
         </div>
       </div>
       <div className="w-1/4 hidden xl:block">{experience.location}</div>

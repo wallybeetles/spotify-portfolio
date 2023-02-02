@@ -23,7 +23,7 @@ const Profile: NextPage = () => {
             Turns out, I am a person who enjoys writing code to create aesthetically pleasing user interfaces. From
             there, I found myself learning about different concepts in front-end development.
             <div className="mt-4">
-              Fast-forward to today, I have the privilege of working as a front-end developer for SEB where I have been
+              Fast-forward to today, I have the privilege of working as a software developer at SEB where I have been
               building accessible, responsive websites and digital experiences.
             </div>
             <div className="mt-4">Here are a few technologies I have been working with recently:</div>

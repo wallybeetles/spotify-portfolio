@@ -40,7 +40,7 @@ const Hero = () => {
         <div className="z-10">
           <div className="flex items-center">
             <Check className="bg-blue rounded-full p-1 mr-1 md:mr-2" strokeWidth={1} size={21} />
-            <span className="uppercase text-xs md:text-sm md:font-semibold">Front-end Developer</span>
+            <span className="uppercase text-xs md:text-sm md:font-semibold">Front-end Software Engineer</span>
           </div>
           <div className="mt-2 md:mt-0 text-4xl sm:text-7xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold">
             Kayle San Juan

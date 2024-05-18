@@ -35,7 +35,7 @@ const works: IWork[] = [
       '/assets/screenshots/portfolio/mobile-2.jpg',
     ],
     place: 'Personal Project',
-    url: 'https://sjkayle.vercel.app',
+    url: 'https://kaylesanjuan.vercel.app',
     githubUrl: 'https://github.com/kaylesaintjohn/spotify-portfolio',
     description:
       "First iteration of my personal website. I got the idea to create a website based on the Spotify's app design when I read an article on Linkedin about a student who created a Spotify-themed resume. Being that Spotify is probably my most used application - and I am a huge fan of the app's aesthetics - I just went for it. This is my first attempt at using TailwindCSS and I had a lot of fun developing this portfolio.",

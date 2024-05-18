@@ -21,7 +21,7 @@ const Footer = memo(function Footer() {
         </div>
       </div>
       <div className="text-xs text-right flex-1">
-        <div>Developed by sjkayle</div>
+        <div>Developed by kaylesaintjohn</div>
         <div className="truncate">Design inspired by Spotify</div>
       </div>
     </footer>

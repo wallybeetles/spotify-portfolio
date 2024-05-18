@@ -21,7 +21,7 @@ const works: IWork[] = [
     ],
     place: 'Personal Project',
     url: 'https://burberry.netlify.app',
-    githubUrl: 'https://github.com/sjkayle/burberry-clone',
+    githubUrl: 'https://github.com/kaylesaintjohn/burberry-clone',
     description:
       'This application is a simple static clone of the landing page of the Burberry Malaysia website. I started this project in order for me to learn how to implement Framer Motion, an animation library for React that I recently discovered, in my future projects. I tried to mimic the animations and gesture behaviour from the original page as closely as possible.',
   },
@@ -36,7 +36,7 @@ const works: IWork[] = [
     ],
     place: 'Personal Project',
     url: 'https://sjkayle.vercel.app',
-    githubUrl: 'https://github.com/sjkayle/spotify-portfolio',
+    githubUrl: 'https://github.com/kaylesaintjohn/spotify-portfolio',
     description:
       "First iteration of my personal website. I got the idea to create a website based on the Spotify's app design when I read an article on Linkedin about a student who created a Spotify-themed resume. Being that Spotify is probably my most used application - and I am a huge fan of the app's aesthetics - I just went for it. This is my first attempt at using TailwindCSS and I had a lot of fun developing this portfolio.",
   },
@@ -62,7 +62,7 @@ const works: IWork[] = [
     ],
     place: 'Personal Project',
     url: 'https://sjkayle-game-center.netlify.app',
-    githubUrl: 'https://github.com/sjkayle/game-center',
+    githubUrl: 'https://github.com/kaylesaintjohn/game-center',
     description:
       'A game center application that consists of different games. Currently, the only game available is the pipes game. The game is integrated to a WebSocket server to send and receive different data needed for the game, i.e. the puzzle to be solved, to check whether the solution is correct, and the passwords for completed puzzles. The goal of this logic game is to rotate each tile until all the pipes are interconnected to each other. The complexity of each puzzle increases at each level. A password will be unlocked for every level completed.',
   },

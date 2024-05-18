@@ -22,8 +22,8 @@ const Home: NextPage = () => {
   const isNavbarDisplayed = useDisplayNavbar(inView);
 
   return (
-    <Main pageBackground="purpleGradient" pageTitle="Kayle San Juan">
-      <AnimatePresence>{isNavbarDisplayed && <Navbar text="Kayle San Juan" sendMailIcon />}</AnimatePresence>
+    <Main pageBackground="purpleGradient" pageTitle="Kayle C. San Juan">
+      <AnimatePresence>{isNavbarDisplayed && <Navbar text="Kayle C. San Juan" sendMailIcon />}</AnimatePresence>
 
       <Hero />
 

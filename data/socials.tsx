@@ -4,18 +4,18 @@ const socials: ISocial[] = [
   {
     id: 1,
     icon: GitHub,
-    url: 'https://github.com/sjkayle',
+    url: 'https://github.com/kaylesaintjohn',
   },
 
   {
     id: 2,
     icon: Linkedin,
-    url: 'https://www.linkedin.com/in/sjkayle/',
+    url: 'https://www.linkedin.com/in/kayle-san-juan-1246a82b8/',
   },
   {
     id: 3,
     icon: Instagram,
-    url: 'https://www.instagram.com/sjkayle/',
+    url: 'https://www.instagram.com/kaylesaintjohn/',
   },
 ];
 

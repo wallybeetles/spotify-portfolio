@@ -16,7 +16,7 @@ import { WorkHero } from '../../components/hero';
 import works from '../../data/works';
 
 const screenshotClasses =
-  'relative rounded-lg overflow-hidden transform hover:scale-101 focus:scale-101 transition duration-200';
+  'relative rounded-lg overflow-hidden hover:scale-101 focus:scale-101 transition duration-200';
 
 const Work: NextPage<WorkProps> = ({ work }) => {
   const { ref, inView } = useInView();
@@ -63,7 +63,7 @@ const Work: NextPage<WorkProps> = ({ work }) => {
                   placeholder="blur"
                   blurDataURL={work.screenshots[0]}
                 />
-                <div className="hidden md:block bg-purple transition duration-500 absolute inset-0 bg-opacity-50 backdrop-filter backdrop-grayscale hover:backdrop-grayscale-0 hover:bg-opacity-0 focus:backdrop-grayscale-0 focus:bg-opacity-0"></div>
+                <div className="hidden md:block bg-purple transition duration-500 absolute inset-0 bg-opacity-50 backdrop-grayscale hover:backdrop-grayscale-0 hover:bg-opacity-0 focus:backdrop-grayscale-0 focus:bg-opacity-0"></div>
               </div>
             )}
             {work.screenshots.length > 1 &&
@@ -83,7 +83,7 @@ const Work: NextPage<WorkProps> = ({ work }) => {
                     placeholder="blur"
                     blurDataURL={screenshot}
                   />
-                  <div className="hidden md:block bg-purple transition duration-500 absolute inset-0 bg-opacity-50 backdrop-filter backdrop-grayscale hover:backdrop-grayscale-0 hover:bg-opacity-0 focus:backdrop-grayscale-0 focus:bg-opacity-0"></div>
+                  <div className="hidden md:block bg-purple transition duration-500 absolute inset-0 bg-opacity-50 backdrop-grayscale hover:backdrop-grayscale-0 hover:bg-opacity-0 focus:backdrop-grayscale-0 focus:bg-opacity-0"></div>
                 </div>
               ))}
           </div>

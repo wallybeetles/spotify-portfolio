@@ -79,7 +79,7 @@ const Home: NextPage = () => {
                 <Link href="/profile" passHref>
                   <a className="group text-xs md:text-sm group-hover:text-white flex items-center justify-start w-max tracking-wider font-semibold uppercase group-hover:underline">
                     <span className="tracking-wider font-semibold uppercase group-hover:underline">See more</span>
-                    <span className="ml-2 transition duration-200 transform group-hover:translate-x-1.5">
+                    <span className="ml-2 transition duration-200 group-hover:translate-x-1.5">
                       <ArrowRight size={18} strokeWidth={1} />
                     </span>
                   </a>

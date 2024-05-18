@@ -59,7 +59,7 @@ const ExperienceModal = memo(function ExperienceModal({ experience }: Experience
         onRequestClose={() => {
           setIsOpen(false);
         }}
-        overlayClassName="fixed inset-0 backdrop-filter backdrop-blur bg-gray-300 bg-opacity-95"
+        overlayClassName="fixed inset-0 backdrop-blur bg-gray-300 bg-opacity-95"
         ariaHideApp={false}
       >
         <div className="text-white flex flex-col h-full">

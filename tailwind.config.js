@@ -1,8 +1,7 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false,
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       scale: {
@@ -34,13 +33,6 @@ module.exports = {
         DEFAULT: '#664c61',
         dark: '#210a1e',
       },
-    },
-  },
-  variants: {
-    extend: {
-      backdropGrayscale: ['hover', 'focus'],
-      display: ['group-hover'],
-      translate: ['group-hover'],
     },
   },
   plugins: [],

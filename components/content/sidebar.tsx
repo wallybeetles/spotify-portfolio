@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { memo } from 'react';
-import { HomeIcon, FolderOpenIcon, UserIcon } from '@heroicons/react/outline';
+import { HomeIcon, FolderOpenIcon, UserIcon } from '@heroicons/react/24/outline';
 import {
   HomeIcon as SolidHomeIcon,
   FolderOpenIcon as SolidFolderOpenIcon,
   UserIcon as SolidUserIcon,
-} from '@heroicons/react/solid';
+} from '@heroicons/react/24/solid';
 
 const sidebarItems: ISidebar[] = [
   {
@@ -46,7 +46,7 @@ const Sidebar = memo(function Sidebar() {
                 <a
                   className={`${
                     isActive ? 'md:bg-gray-300 text-white' : 'text-gray-100'
-                  } md:font-semibold text-xs md:text-sm hover:text-white h-10 flex flex-col md:flex-row justify-center md:justify-start items-center px-3 rounded-md transform focus:scale-90 md:focus:scale-100`}
+                  } md:font-semibold text-xs md:text-sm hover:text-white h-10 flex flex-col md:flex-row justify-center md:justify-start items-center px-3 rounded-md focus:scale-90 md:focus:scale-100`}
                 >
                   {isActive ? <SolidIcon className="w-5 h-5" /> : <Icon className="w-5 h-5" />}
                   <span className="md:ml-4">{label}</span>
@@ -64,8 +64,8 @@ interface ISidebar {
   id: number;
   path: string;
   label: string;
-  icon: HeroIcon;
-  solidIcon: HeroIcon;
+  icon: any;
+  solidIcon: any;
 }
 
 export default Sidebar;

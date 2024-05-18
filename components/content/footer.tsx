@@ -11,7 +11,7 @@ const Footer = memo(function Footer() {
           {socials.map(({ id, icon: Icon, url }) => (
             <div
               key={id}
-              className="transform hover:scale-105 hover:text-green-spotify transition duration-200 mx-2 md:mx-3"
+              className="hover:scale-105 hover:text-green-spotify transition duration-200 mx-2 md:mx-3"
             >
               <a href={url} target="_blank" rel="noreferrer">
                 <Icon strokeWidth={1.5} size={18} />

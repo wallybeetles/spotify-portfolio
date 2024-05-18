@@ -18,7 +18,7 @@ const WorkCard = (props: WorkCardProps) => {
             />
             <Eye
               strokeWidth={2}
-              className="hidden group-hover:flex items-center justify-center mr-2 mb-2 p-3 h-10 w-10 text-white absolute right-0 bottom-0 bg-green-spotify rounded-full transform hover:scale-110 transition duration-200"
+              className="hidden group-hover:flex items-center justify-center mr-2 mb-2 p-3 h-10 w-10 text-white absolute right-0 bottom-0 bg-green-spotify rounded-full hover:scale-110 transition duration-200"
             />
           </div>
           <div className="text-white text-xs sm:text-sm md:text-base mt-3 md:mt-4 font-semibold truncate">

@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
-import { HomeIcon } from '@heroicons/react/solid';
+import { HomeIcon } from '@heroicons/react/24/solid';
 
 function Custom404() {
   return (
